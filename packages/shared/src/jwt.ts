@@ -14,4 +14,3 @@ export function generateJWT(appId: string, privateKey: string): string {
 
   return jsonwebtoken.sign(payload, privateKey, { algorithm: "RS256" });
 }
-
